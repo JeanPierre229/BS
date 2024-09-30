@@ -24,14 +24,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+    <link rel="stylesheet" href="new/css/font-awesome.css">
 </head>
 <style>
     .cadrant-green{
         border: 10px solid #00A65A;
     }
 
-    .hideTCoach, .hideTEntrepreneur{
+    .hideTparticuliers, .hideTconsommateurs{
         display: none;
     }
     .cursor{
@@ -118,12 +118,12 @@
                                     <a href="single.html" class="dropdown-item">Gestion de votre cheptel</a>
                                 </div>
                             </div>
-                            <a href="tarifs.html" class="nav-item nav-link">Tarifs</a>
+                            <a href="tarifs.html" class="nav-item nav-link active">Tarifs</a>
                             <a href="blog.html" class="nav-item nav-link">Blog</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a href="" class="btn btn-primary mr-3 d-none d-lg-block">Commencer</a>
-                        <a href="" class="btn btn-outline-secondary mr-3 d-none d-lg-block">Connexion</a>
+                        <a href="inscription.html" class="btn btn-primary mr-3 d-none d-lg-block">Commencer</a>
+                        <a href="connexion.html" class="btn btn-outline-secondary mr-3 d-none d-lg-block">Connexion</a>
                     </div>
                 </nav>
             </div>
@@ -153,17 +153,17 @@
 
     <!-- Tarifs Start -->
     <div class="row mx-5">
-        <div class="col mx-auto text-center bg-green border-bottom-orange cursor rounded-start p-3" id="tsaei" onclick="showSection_t('TSAEI')"> 
+        <div class="col mx-auto text-center bg-green border-bottom-orange cursor rounded-start p-3" id="televeurs" onclick="showSection_t('Televeurs')"> 
             Eleveurs
         </div>
-        <div class="col mx-auto text-center bg-gray border-bottom-orange cursor p-3"  id="tcoach"  onclick="showSection_t('TCoach')">
+        <div class="col mx-auto text-center bg-gray border-bottom-orange cursor p-3"  id="tparticuliers"  onclick="showSection_t('Tparticuliers')">
             Particuliers
         </div>
-        <div class="col mx-auto text-center bg-gray border-bottom-orange cursor p-3 rounded-end" id="tentrepreneur" onclick="showSection_t('TEntrepreneur')"> 
+        <div class="col mx-auto text-center bg-gray border-bottom-orange cursor p-3 rounded-end" id="tconsommateurs" onclick="showSection_t('Tconsommateurs')"> 
             Consommateurs
         </div>
     </div>
-    <section class="my-4 hideTSAEI mx-5">
+    <section class="my-4 hideTeleveurs mx-5">
         <div class="row d-flex justify-content-between mx-5">
             <div class="col-lg-5 cadrant-green rounded-4 shadow p-3">
                 <h3 class="text-center">Offre Basique </h3>
@@ -188,15 +188,15 @@
                     Plateforme de mise en relation avec les acheteurs
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-danger"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Assistance personnalisée d'un conseiller dédié
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-danger"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Formations et ateliers sur les meilleures pratiques d'élevage
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-danger"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Priorité dans les mises en relation avec les acheteurs
                 </p>
             </div>
@@ -237,7 +237,7 @@
             </div>
         </div>
     </section>
-    <section class="my-4 hideTCoach mx-5">
+    <section class="my-4 hideTparticuliers mx-5">
         <div class="row d-flex justify-content-between mx-5">
             <div class="col-lg-5 cadrant-green rounded-4 shadow p-3">
                 <h3 class="text-center">Offre Basique </h3>
@@ -249,28 +249,6 @@
                     <button class="btn btn-outline-secondary py-3 col-12">COMMENCER</button>
                 </p>
                 <h5 class="my-3">FONCTIONS DISPONIBLES</h5>
-                <!-- 
-
-                    ## Offre pour les Particuliers
-
-                    **Abonnement de base - 20 000 FCFA/an**
-                    - Accès à notre catalogue d'éleveurs certifiés
-                    - Commande et livraison de produits d'élevage
-                    - Outils de suivi de votre activité d'élevage
-
-                    **Offre Premium - 40 000 FCFA/an**
-                    - Tout compris dans l'abonnement de base
-                    - Conseils personnalisés d'un expert en élevage
-                    - Priorité dans l'accès aux produits les plus demandés
-
-                    ## Offre pour les Consommateurs
-
-                    **Commande ponctuelle**
-                    - Achat direct auprès des éleveurs de notre communauté
-                    - Livraison à domicile ou en point relais
-                    - Tarifs compétitifs et transparents
-
-                 -->
                 <p>
                     <i class="fa fa-check-circle text-secondary"></i>
                     Accès à notre catalogue d'éleveurs certifiés
@@ -280,15 +258,15 @@
                     Commande et livraison de produits d'élevage
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-secondary"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Outils de suivi de votre activité d'élevage
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-danger"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Conseils personnalisés d'un expert en élevage
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-danger"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Priorité dans l'accès aux produits les plus demandés
                 </p>
             </div>
@@ -325,7 +303,7 @@
             </div>
         </div>
     </section>
-    <section class="my-4 hideTEntrepreneur mx-5">
+    <section class="my-4 hideTconsommateurs mx-5">
         <div class="row d-flex justify-content-between mx-5">
             <div class="col-lg-5 cadrant-green rounded-4 shadow p-3">
                 <h3 class="text-center">Offre Basique </h3>
@@ -338,52 +316,52 @@
                 </p>
                 <h5 class="my-3">FONCTIONS DISPONIBLES</h5>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Elaborer un programme d'accompagnement.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Rechercher un financement.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Mise en oeuvre du programme.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Suivie et Evaluation.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Ajouter Equipier.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Créer une cohortes.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Activer un parcours.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Créer un coach ou un mentor.
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    Créer un particuliers ou un mentor.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Planifier les coachings.
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    Planifier les particuliersings.
                 </p>
                 <p>
-                    <i class="fa fa-remove text-green"></i>
-                    Ressources documentaires pour coach
+                    <i class="fa fa-remove text-danger"></i>
+                    Ressources documentaires pour particuliers
                 </p>
                 <p>
-                    <i class="fa fa-remove text-green"></i>
+                    <i class="fa fa-remove text-danger"></i>
                     Ressources documentaires pour incubé
                 </p>
                 <p>
-                    <i class="fa fa-remove text-green"></i>
-                    Coaching collectif
+                    <i class="fa fa-remove text-danger"></i>
+                    particuliersing collectif
                 </p>
             </div>
             <div class="col-lg-5 cadrant-green rounded-4 ml-4 p-3 shadow">
@@ -397,52 +375,52 @@
                 </p>
                 <h5 class="my-3">FONCTIONS DISPONIBLES</h5>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Elaborer un programme d'accompagnement.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Rechercher un financement.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Mise en oeuvre du programme.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Suivie et Evaluation.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Ajouter Equipier.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Créer une cohortes.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Activer un parcours.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Créer un coach ou un mentor.
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    Créer un particuliers ou un mentor.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Planifier les coachings.
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    Planifier les particuliersings.
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Ressources documentaires pour coach
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    Ressources documentaires pour particuliers
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
+                    <i class="fa fa-check-circle text-secondary"></i>
                     Ressources documentaires pour incubé
                 </p>
                 <p>
-                    <i class="fa fa-check-circle text-green"></i>
-                    Coaching collectif
+                    <i class="fa fa-check-circle text-secondary"></i>
+                    particuliersing collectif
                 </p>
             </div>
         </div>
@@ -478,7 +456,7 @@
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Accueil</a>
                     <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>A propos</a>
-                    <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Solution</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Annuaire</a>
                     <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contactez-Nous</a>
                 </div>
@@ -547,31 +525,40 @@
 
     <!-- Navigation dans les options -->
     <script>
-        const sections1 = document.querySelectorAll('.hideTSAEI, .hideTCoach, .hideTEntrepreneur');
-        const selectTSAEI = document.getElementById('tsaei');
-        const selectTCoach = document.getElementById('tcoach');
-        const selectTEntrepreneur = document.getElementById('tentrepreneur');
+        const sections1 = document.querySelectorAll('.hideTeleveurs, .hideTparticuliers, .hideTconsommateurs');
+        const selectTeleveurs = document.getElementById('televeurs');
+        const selectTparticuliers = document.getElementById('tparticuliers');
+        const selectTconsommateurs = document.getElementById('tconsommateurs');
     
         function showSection_t(section) {
             sections1.forEach(sec => sec.style.display = 'none');
             document.querySelector('.hide' + section).style.display = 'block';
         }
-    
+        selectTeleveurs.style.color = "white";
         // Partie sélection
-        selectTSAEI.addEventListener('click', function(){
-            selectTSAEI.style.backgroundColor = "#00A65A";
-            selectTCoach.style.backgroundColor = "#D9D9D9";
-            selectTEntrepreneur.style.backgroundColor = "#D9D9D9";
+        selectTeleveurs.addEventListener('click', function(){
+            selectTeleveurs.style.backgroundColor = "#00A65A";
+            selectTparticuliers.style.backgroundColor = "#D9D9D9";
+            selectTconsommateurs.style.backgroundColor = "#D9D9D9";
+            selectTeleveurs.style.color = "white";
+            selectTparticuliers.style.color = "black";
+            selectTconsommateurs.style.color = "black";
         });
-        selectTCoach.addEventListener('click', function(){
-            selectTCoach.style.backgroundColor = "#00A65A";
-            selectTSAEI.style.backgroundColor = "#D9D9D9";
-            selectTEntrepreneur.style.backgroundColor = "#D9D9D9";
+        selectTparticuliers.addEventListener('click', function(){
+            selectTparticuliers.style.backgroundColor = "#00A65A";
+            selectTeleveurs.style.backgroundColor = "#D9D9D9";
+            selectTconsommateurs.style.backgroundColor = "#D9D9D9";
+            selectTparticuliers.style.color = "white";
+            selectTconsommateurs.style.color = "black";
+            selectTeleveurs.style.color = "black";
         });
-        selectTEntrepreneur.addEventListener('click', function(){
-            selectTEntrepreneur.style.backgroundColor = "#00A65A";
-            selectTCoach.style.backgroundColor = "#D9D9D9";
-            selectTSAEI.style.backgroundColor = "#D9D9D9";
+        selectTconsommateurs.addEventListener('click', function(){
+            selectTconsommateurs.style.backgroundColor = "#00A65A";
+            selectTparticuliers.style.backgroundColor = "#D9D9D9";
+            selectTeleveurs.style.backgroundColor = "#D9D9D9";
+            selectTconsommateurs.style.color = "white";
+            selectTeleveurs.style.color = "black";
+            selectTparticuliers.style.color = "black";
         });
     </script>
 </body>
