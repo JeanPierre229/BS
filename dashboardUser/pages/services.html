@@ -40,6 +40,33 @@
   .sidenav-footer{
     margin-top: 160px;
   }
+  .cadrant-green{
+      border: 10px solid #00A65A;
+  }
+
+  .hideTparticuliers, .hideTconsommateurs{
+      display: none;
+  }
+  .cursor{
+      cursor: pointer;
+  }
+  .rounded-4{
+      border-radius: 20px;
+  }
+  .bg-gray{
+      background-color: #e6e6e6;
+  }
+  .bg-green{
+      background-color: #00A65A;
+  }
+  .rounded-start{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+  .rounded-end{
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
 </style>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -118,7 +145,7 @@
       </ul>
     </div>
     <div class="sidenav-footer mx-3 ">
-      <a class="btn bg-gradient-primary mt-3 w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard-pro?ref=sidebarfree">Upgrade to pro</a>
+      <a class="btn bg-gradient-primary mt-3 w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard-pro?ref=sidebarfree">Version Premium</a>
     </div>
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
@@ -239,16 +266,27 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
+      <div class="row my-4 px-2">
+          <div class="col mx-auto text-center text-light font-weight-bold bg-gradient-primary cursor rounded-start p-1" id="televeurs" onclick="showSection_t('Televeurs')"> 
+              Animaliers Peulhs
+          </div>
+          <div class="col mx-auto text-center bg-gray cursor p-1"  id="tparticuliers"  onclick="showSection_t('Tparticuliers')">
+              Particuliers
+          </div>
+          <div class="col mx-auto text-center bg-gray cursor p-1 rounded-end" id="tconsommateurs" onclick="showSection_t('Tconsommateurs')"> 
+              Consommateurs
+          </div>
+      </div>
       <div class="row my-4">
         <div class="col-lg-12 col-md-9 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
               <div class="row">
                 <div class="col-lg-6 col-7">
-                  <h6>Ferms gérées</h6>
+                  <h6>Animaliers Peulhs</h6>
                   <p class="text-sm mb-0">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
-                    <span class="font-weight-bold ms-1">30 achevé</span> ce mois
+                    <span class="font-weight-bold ms-1">30 ventes assurées</span> ce mois
                   </p>
                 </div>
                 <div class="col-lg-6 col-5 my-auto text-end">
@@ -270,8 +308,8 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Compagnies</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Membres</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Animaliers Peulhs</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Collaborateurs</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Budget</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Progression</th>
                     </tr>
@@ -284,7 +322,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="xd">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Agence Elevage Plus</h6>
+                            <h6 class="mb-0 text-sm">Manouton Koffi</h6>
                           </div>
                         </div>
                       </td>
@@ -327,7 +365,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="atlassian">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">BovinHome New</h6>
+                            <h6 class="mb-0 text-sm">AGOSSOU Christian</h6>
                           </div>
                         </div>
                       </td>
@@ -364,7 +402,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="team7">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Gounou Ferme</h6>
+                            <h6 class="mb-0 text-sm">Bloukoutou Jean</h6>
                           </div>
                         </div>
                       </td>
@@ -401,7 +439,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="spotify">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Wax Service</h6>
+                            <h6 class="mb-0 text-sm">Adje Robert</h6>
                           </div>
                         </div>
                       </td>
@@ -444,7 +482,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="jira">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Nounagnon Dieu Béni</h6>
+                            <h6 class="mb-0 text-sm">Nounagnon Béni de Dieu</h6>
                           </div>
                         </div>
                       </td>
@@ -478,7 +516,7 @@
                             <img src="../../img/img-peulh/logo.png" class="avatar avatar-sm me-3" alt="invision">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">FarmTech</h6>
+                            <h6 class="mb-0 text-sm">Zougou Valentin</h6>
                           </div>
                         </div>
                       </td>
