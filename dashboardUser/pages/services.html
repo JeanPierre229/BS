@@ -37,6 +37,9 @@
   .bg-gradient-primary{
     background-image: linear-gradient(310deg, #ffc107 0%, #28a745 100%);
   }
+  .borderDark{
+    border: 1px solid rgb(165, 165, 165);
+  }
   .sidenav-footer{
     margin-top: 160px;
   }
@@ -266,24 +269,44 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid py-4">
-      <div class="row my-4 px-2">
+      <div class="card borderDark">
+        <div class="card-header">
+          <div class="row my-4">
+            <div class="col">
+              <img src="../../img/img-peulh/bovinsolution.png" alt="" style="width: 100px; height: 100px;">
+              <span class="text-green font-weight-bolder" style="font-size: 25px;">Bovin<span class="text-orange">Solution</span></span>
+            </div>
+            <div class="col text-end">
+              <p class="font-weight-bolder">
+                Allez à la rencontre de nos professionnels <br> et découvrez nos formations
+              </p>
+              <button class="btn bg-gradient-info">Découvrir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row my-4 px-2 mx-3">
           <div class="col mx-auto text-center text-light font-weight-bold bg-gradient-primary cursor rounded-start p-1" id="televeurs" onclick="showSection_t('Televeurs')"> 
               Animaliers Peulhs
           </div>
           <div class="col mx-auto text-center bg-gray cursor p-1"  id="tparticuliers"  onclick="showSection_t('Tparticuliers')">
-              Particuliers
+              Relation Eleveur-Acheteur
           </div>
           <div class="col mx-auto text-center bg-gray cursor p-1 rounded-end" id="tconsommateurs" onclick="showSection_t('Tconsommateurs')"> 
-              Consommateurs
+              Animaux Enregistrés
+          </div>
+          <div class="col mx-auto text-center bg-gray cursor p-1 rounded-end" id="tconsommateurs" onclick="showSection_t('Tconsommateurs')"> 
+              Bétails Vendus
           </div>
       </div>
-      <div class="row my-4">
+      <div class="row my-4 mx-3">
         <div class="col-lg-12 col-md-9 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
               <div class="row">
                 <div class="col-lg-6 col-7">
-                  <h6>Animaliers Peulhs</h6>
+                  <h6>Nos Animaliers Peulhs</h6>
                   <p class="text-sm mb-0">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
                     <span class="font-weight-bold ms-1">30 ventes assurées</span> ce mois
@@ -295,9 +318,9 @@
                       <i class="fa fa-ellipsis-v text-secondary"></i>
                     </a>
                     <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
-                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Actions</a></li>
-                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Autres actions</a></li>
-                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Autre chose ici</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Voir tout</a></li>
+                      <!-- <li><a class="dropdown-item border-radius-md" href="javascript:;">Autre actions</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Autre chose ici</a></li> -->
                     </ul>
                   </div>
                 </div>
